@@ -71,6 +71,7 @@ body{
 .navbar-nav{
     display: flex;
     flex-direction: column;
+    width: 100vw;
 }
 .nav-item{
     list-style-type: none;
