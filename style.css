@@ -8,17 +8,17 @@
 body{
     font-family: 'Dancing Script', cursive;
     line-height: 1.5;
+    width: 100vw;
 
 }
 .navbar{
     position: fixed;
-    top: 0;
-    left: 0;
+    
     width: 100vw;
-    padding: 1.4rem 2rem;
+    
     z-index: 999;
 }
-.brand-and-toggler{
+.brand-and-toggler{ 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -71,7 +71,6 @@ body{
 .navbar-nav{
     display: flex;
     flex-direction: column;
-    width: 100vw;
 }
 .nav-item{
     list-style-type: none;
