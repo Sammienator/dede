@@ -11,36 +11,28 @@ window.onscroll = function() {
 
 
 
-
-
-
-// navigation bar 
-const navShowBtn = document.querySelector('.nav-show-btn');
-const navHideBtn = document.querySelector('.nav-hide-btn');
-const navMenu = document.querySelector('.navbar-collapse');
-
-navShowBtn.addEventListener('click', () => {
-    navMenu.classList.add('showNav');
-});
-
-navHideBtn.addEventListener('click', () => {
-    navMenu.classList.remove('showNav');
-});
-
-// showcase bg slider 
-const dottedBtns = document.querySelectorAll('.dotted-btns span');
-let slideCount = 0;
-
-dottedBtns.forEach((item) => {
-    item.addEventListener('click', () => {
-        slideCount = item.dataset.id;
-        slideShowcase();
-    });
-});
-
-function slideShowcase(){
-    const displayWidth = document.querySelector('.showcase').clientWidth;
-    document.querySelector('.showcase-content').style.transform = `translateX(${-slideCount * displayWidth}px)`;
-}
-
-window.addEventListener('resize', slideShowcase);
+  const menu = document.querySelector(".menu");
+  const menuItems = document.querySelectorAll(".menuItem");
+  const hamburger= document.querySelector(".hamburger");
+  const closeIcon= document.querySelector(".closeIcon");
+  const menuIcon = document.querySelector(".menuIcon");
+  
+  function toggleMenu() {
+    if (menu.classList.contains("showMenu")) {
+      menu.classList.remove("showMenu");
+      closeIcon.style.display = "none";
+      menuIcon.style.display = "block";
+    } else {
+      menu.classList.add("showMenu");
+      closeIcon.style.display = "block";
+      menuIcon.style.display = "none";
+    }
+  }
+  
+  hamburger.addEventListener("click", toggleMenu);
+  
+  menuItems.forEach( 
+    function(menuItem) { 
+      menuItem.addEventListener("click", toggleMenu);
+    }
+  )
