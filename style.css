@@ -2,6 +2,17 @@
 
 
 
+html {
+    scroll-snap-type: y;
+  }
+  
+  section {
+    scroll-snap-align: start;
+    min-block-size: 100vh;
+    
+    display: flex;
+
+  }
 *{
     padding: 0;
     margin: 0;
@@ -131,7 +142,7 @@ body{
 
 
 .showcase:nth-child(1){
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(images/balloon.jpg) center/cover ;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(images/balloon1.jpg) center/cover ;
 }
 /* .showcase:nth-child(2){
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(assets/bg-2.jpg) center/cover no-repeat;
@@ -140,6 +151,70 @@ body{
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(assets/bg-3.jpg) center/cover no-repeat;
 } */
 
+
+
+
+
+/* contact us page */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  img{
+      height: 500px;
+      margin-top: 20px;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+}
 @media screen and (min-width: 400px){
     .showcase h1{
         font-size: 4rem;
@@ -148,7 +223,7 @@ body{
 
 @media screen and (min-width: 992px){
     .showcase h1{
-        font-size: 5rem;
+        font-size: 4rem;
     }
     .showcase button{
         font-size: 1.05rem;
