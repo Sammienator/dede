@@ -26,16 +26,17 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     padding: 1.4rem 2rem;
     z-index: 999;
-    width: 100vw;
+ 
 }
 .brand-and-toggler{
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
+    width: 100vw;
     
 
 }
@@ -205,15 +206,15 @@ body{
 }
 @media screen and (min-width: 400px){
     .showcase h1{
-        font-size: 4rem;
+        font-size: 3rem;
     }
 }
 
 @media screen and (min-width: 992px){
     .showcase h1{
-        font-size: 4rem;
+        font-size: 3rem;
     }
     .showcase button{
-        font-size: 1.05rem;
+        font-size: 1rem;
     }
 }
