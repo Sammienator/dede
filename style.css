@@ -227,6 +227,21 @@ body{
       margin-top: 0;
     }
 }
+
+
+
+
+/* footer */
+.footer{
+    padding: 40px 0;
+    background-color: #fff;
+
+}
+
+
+
+
+
 @media screen and (min-width: 400px){
     .showcase h1{
         font-size: 3rem;
