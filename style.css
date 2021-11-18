@@ -305,6 +305,7 @@ body{
 @media screen and (min-width: 400px){
     .showcase h1{
         font-size: 3rem;
+        width: 100vw;
     }
 }
 
